@@ -1,0 +1,13 @@
+
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+
+    <h1 class="jumbotron" id="title">{{ Blog.title|upper }}</h1><br>
+    <h5>{{ Blog.date|date:'l F d Y'|upper }}</h5><br>
+    <p>{{ Blog.entry|safe }}<p><br>
+
+
+
+
+{% endblock %}
